@@ -24,6 +24,20 @@ body {
   color: var(--black-color);
 }
 
+.btn-accent {
+  display: inline-block;
+  margin: 0 12px;
+  background-color: var(--accent-color);
+  color: var(--white-color);
+  border: none;
+  padding: 8px 28px;
+  font-size: .8rem;
+  font-weight: 500;
+  letter-spacing: .9px;
+  border-radius: 20px;
+  text-align: center;
+}
+
 .container {
   min-height: 100vh;
   display: grid;
@@ -77,6 +91,7 @@ body {
   flex-direction: column;
   padding: var(--padding-block);
   background-color: var(--white-color);
+  box-shadow: 1px 1px 4px 1px rgba(0, 0, 0, .1);
 }
 
 .header-top {
@@ -106,6 +121,7 @@ body {
 .page-actions {
   display: flex;
   justify-content: center;
+  align-items: center;
 }
 
 .main {
