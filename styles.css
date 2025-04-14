@@ -18,7 +18,7 @@ body {
   font-style: normal;
   font-variation-settings:
     "wdth" 100;
-  letter-spacing: .4px;
+  letter-spacing: .6px;
 
   background-color: var(--grey-color);
   color: var(--black-color);
@@ -31,11 +31,12 @@ body {
   color: var(--white-color);
   border: none;
   padding: 8px 28px;
-  font-size: .8rem;
+  font-size: .9rem;
   font-weight: 500;
   letter-spacing: .9px;
   border-radius: 20px;
   text-align: center;
+  cursor: pointer;
 }
 
 .container {
@@ -89,6 +90,7 @@ body {
 .header {
   display: flex;
   flex-direction: column;
+  gap: var(--padding-block);
   padding: var(--padding-block);
   background-color: var(--white-color);
   box-shadow: 1px 1px 4px 1px rgba(0, 0, 0, .1);
@@ -96,10 +98,19 @@ body {
 
 .header-top {
   display: flex;
+  justify-content: space-between;
+  gap: var(--padding-block);
 }
 
 .search {
-  flex-grow: 1;
+  flex-basis: max(120px, 60%);
+}
+
+.search input {
+  width: 100%;
+  border: 1px solid var(--grey-color);
+  border-radius: 12px;
+  padding: 2px 12px;
 }
 
 .header-top-actions {
@@ -116,6 +127,15 @@ body {
 
 .user-active {
   flex-grow: 1;
+
+  p {
+    font-size: .9rem;
+    line-height: 1;
+  }
+
+  .user-active-name {
+    font-size: 1.4rem;
+  }
 }
 
 .page-actions {
