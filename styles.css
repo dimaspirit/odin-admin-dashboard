@@ -130,11 +130,36 @@ body {
   grid-template-columns: 1fr 280px;
   grid-template-rows: 1fr 1fr;
   padding: var(--padding-block);
+  gap: var(--padding-block);
 }
 
 .projects {
   grid-row: 1 / 3;
   grid-column: 1;
+}
+
+.projects-list {
+  display: grid;
+  grid-template: 1fr 1fr / 1fr 1fr;
+  gap: var(--padding-block);
+}
+
+.project-item {
+  position: relative;
+  overflow: hidden;
+  padding: var(--padding-block) var(--padding-block) var(--padding-block) calc(var(--padding-block) * 2);
+  background-color: var(--white-color);
+  box-shadow: 1px 1px 4px 1px rgba(0, 0, 0, .1);
+  border-radius: 12px;
+}
+
+.project-line {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 10px;
+  height: 100%;
+  background-color: #F0B429;
 }
 
 h1 {
